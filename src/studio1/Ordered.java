@@ -12,7 +12,9 @@ public class Ordered {
 		int x = ap.nextInt("Value for x?");
 		int y = ap.nextInt("Value for y?");
 		int z = ap.nextInt("Value for z?");
-
+		boolean forward = (x > y) && (y > z);
+		boolean backward = (x < y) && (y < z);
+		boolean isOrdered = forward || backward;
+		System.out.println("Are x, y, and z ordered?     " + isOrdered);
 	}
-
 }
